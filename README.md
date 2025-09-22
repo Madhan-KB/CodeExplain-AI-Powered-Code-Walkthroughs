@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+CodeExplain – AI-Powered Code Walkthroughs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CodeExplain helps developers understand any GitHub repository faster.
+Point it at a repo URL and get an interactive, AI-generated walkthrough of the entire codebase—functions, classes, and architecture.
 
-## Available Scripts
+✨ Features
 
-In the project directory, you can run:
+🔍 Automatic Code Parsing – Pulls the repo and analyzes files/language automatically.
 
-### `npm start`
+🤖 AI-Generated Explanations – Step-by-step breakdown of each module, class, and function.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🗂 Interactive Navigation – Click through the code hierarchy or search for specific components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🧩 Multi-Language Support – Works with Python, JavaScript/TypeScript, Java, and more.
 
-### `npm test`
+🌐 Web App & CLI – Browse explanations in a browser or generate a markdown summary from the terminal.
+🚀 Getting Started
+Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Python 3.10+ and Node 18+
 
-### `npm run build`
+An OpenAI API key (or compatible LLM endpoint)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Installation
+# Clone the repo
+git clone https://github.com/<your-username>/codeexplain.git
+cd codeexplain
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Backend setup
+cd backend
+pip install -r requirements.txt
+cp .env.example .env   # add your API keys
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Frontend setup
+cd ../frontend
+npm install
 
-### `npm run eject`
+Run Locally
+# Backend
+uvicorn app.main:app --reload
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Frontend (in another terminal)
+npm run dev
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Visit: http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🧪 Usage
 
-## Learn More
+Paste a GitHub repo URL in the UI or CLI.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The system fetches and parses the codebase.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Interact with the generated explanation tree or export it to Markdown/PDF.
 
-### Code Splitting
+🗺 Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ Add authentication & user dashboards
 
-### Analyzing the Bundle Size
+ Improve multi-language coverage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ Add “diff explanations” for pull requests
 
-### Making a Progressive Web App
+ VS Code extension
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🤝 Contributing
 
-### Advanced Configuration
+Contributions, issues, and feature requests are welcome!
+Fork the repo and create a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📜 License
 
-### Deployment
+MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🙌 Acknowledgements
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks to open-source libraries and the developer community for inspiration and support.
